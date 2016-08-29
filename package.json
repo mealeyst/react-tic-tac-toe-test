@@ -1,0 +1,25 @@
+{
+  "name": "reaact-tic-tac-toe-test",
+  "version": "1.0.0",
+  "description": "A small react app to play tic-tac-toe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mealeyst/reaact-tic-tac-toe-test.git"
+  },
+  "keywords": [
+    "tic-tac-toe"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mealeyst/reaact-tic-tac-toe-test/issues"
+  },
+  "homepage": "https://github.com/mealeyst/reaact-tic-tac-toe-test#readme",
+  "dependencies": {
+    "react": "^15.3.1"
+  }
+}
