@@ -19,6 +19,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        <div>Player: {this.state.player_turn}</div>
         <Space onClick={this.handleClickSpace} />
       </div>
     );
