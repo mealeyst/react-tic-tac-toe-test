@@ -28,6 +28,13 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify('development')
     })
   ],
+
+  externals: {
+    'react/addons': true,
+    'react/lib/ExecutionEnvironment': true,
+    'react/lib/ReactContext': true
+  },
+
   module: {
     loaders: [{
       test: /\.jsx?$/,

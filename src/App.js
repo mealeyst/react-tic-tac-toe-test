@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './App.css';
 import Space from './components/Space';
 
 export default class App extends React.Component {
@@ -19,7 +18,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className={styles.app}>
+      <div>
         <Space onClick={this.handleClickSpace} />
       </div>
     );
