@@ -1,14 +1,22 @@
 import React from 'react';
 import Space from './components/Space';
 
+const initialState = {
+  player_turn: 'X',
+  spaces: [...Array(9)],
+  isInitialized: true
+}
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClickReset = this.handleClickReset.bind(this);
     this.handleClickSpace = this.handleClickSpace.bind(this);
-    this.state = {
-      player_turn: 'X',
-      spaces: [...Array(9)]
-    };
+    this.state = initialState;
+  }
+
+  handleClickReset() {
+    this.setState(initialState);
   }
 
   handleClickSpace(idx, evt) {
@@ -17,7 +25,8 @@ export default class App extends React.Component {
     spaces_clone[idx] = player_turn;
     this.setState({
       player_turn: player_turn == 'X' ? 'O' : 'X',
-      spaces: spaces_clone
+      spaces: spaces_clone,
+      isInitialized: false
     });
   }
 
@@ -27,6 +36,7 @@ export default class App extends React.Component {
       <div>
         <div>Player: {player_turn}</div>
         {spaces.map( (space, index) => <Space spaces={spaces} key={index} index={index} value={space} onClick={this.handleClickSpace} />)}
+        <button onClick={this.handleClickReset} disabled={this.state.isInitialized}>Reset</button>
       </div>
     );
   }
