@@ -49,6 +49,10 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
-    }]
+    }, {
+      test: /\.svg$/,
+      loader: 'babel?presets[]=es2015,presets[]=react!svg-react'
+    }
+    ]
   }
 };

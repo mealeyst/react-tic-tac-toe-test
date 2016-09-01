@@ -36,10 +36,12 @@
     "enzyme": "^2.4.1",
     "express": "^4.14.0",
     "html-webpack-plugin": "^2.22.0",
+    "image-webpack-loader": "^2.0.0",
     "jsdom": "^9.4.5",
     "mocha": "^3.0.2",
     "react-addons-test-utils": "^15.3.1",
     "style-loader": "^0.13.1",
+    "svg-react-loader": "^0.3.7",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.2"

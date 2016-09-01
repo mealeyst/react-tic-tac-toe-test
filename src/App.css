@@ -1,3 +1,62 @@
-.app {
-  background-color: gray;
+body {
+  color: #0073d1;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+button {
+  color: white;
+  border: 0;
+  background-color: transparent;
+  margin:0;
+  padding:10px;
+}
+
+button:focus {outline:0;}
+
+.playAgain {
+  background-color: white;
+  color: #0073d1;
+  font-size: 2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+
+.appHeading {
+  margin: 20px 0;
+  background-color: #0073d1;
+  color: white;
+}
+
+.appHeading svg {
+  stroke:white;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.currentPlayer {
+  display: inline-block;
+  width: 40px;
+  top: 8px;
+  position: relative;
+}
+
+svg {
+  stroke-width: 1;
+  fill:none;
+  stroke:#0073d1;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
 }

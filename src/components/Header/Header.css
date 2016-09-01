@@ -1,0 +1,15 @@
+.header {
+  background: #0073d1;
+  color: white;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.header h1 {
+  display: inline-block;
+}
+
+.header svg {
+  stroke: white;
+}
